@@ -2,6 +2,10 @@ name: Sync Fork
 
 on:
   workflow_dispatch:
+    inputs:
+        name:
+          description: "test"
+          default: "test"
   schedule: 
   - cron: "0 13 * * 1"
 
